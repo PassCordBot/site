@@ -1,11 +1,13 @@
 import type { FC } from 'react';
-import { DiscordMessage, DiscordMessages, DiscordEmbed, DiscordMention, DiscordMarkdown } from '@discord-message-components/react';
+import pkg from '@discord-message-components/react';
 import '@discord-message-components/react/dist/style.css';
 import '../assets/global.css';
 import arrow from '../assets/arrow.webp';
 import angelnext from '../assets/angelnext.png';
 import premium from '../assets/premium.svg';
 import Fade from 'react-reveal/Fade';
+
+const { DiscordMessages, DiscordMessage, DiscordEmbed, DiscordMention, DiscordMarkdown } = pkg;
 
 const Logs: FC = () => {
 	return (

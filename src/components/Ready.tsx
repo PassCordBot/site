@@ -1,7 +1,9 @@
 import type { FC } from 'react';
-import { DiscordMessage, DiscordMessages, DiscordEmbed, DiscordButtons, DiscordButton } from '@discord-message-components/react';
+import pkg from '@discord-message-components/react';
 import '@discord-message-components/react/dist/style.css';
 import Fade from 'react-reveal/Fade';
+
+const { DiscordMessages, DiscordMessage, DiscordEmbed, DiscordButtons, DiscordButton } = pkg;
 
 const Ready: FC = () => {
 	return (

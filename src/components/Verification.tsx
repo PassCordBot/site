@@ -1,11 +1,13 @@
 import type { FC } from 'react';
-import { DiscordMessage, DiscordMessages, DiscordEmbed } from '@discord-message-components/react';
+import pkg from '@discord-message-components/react';
 import '@discord-message-components/react/dist/style.css';
 import '../assets/global.css';
 import reply from '../assets/reply.webp';
 import captcha from '../assets/captcha.png';
 import angelnext from '../assets/angelnext.png';
 import Fade from 'react-reveal/Fade';
+
+const { DiscordMessages, DiscordMessage, DiscordEmbed } = pkg;
 
 const Verification: FC = () => {
 	return (
