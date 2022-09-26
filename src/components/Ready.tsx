@@ -4,6 +4,8 @@ import Fade from 'react-reveal/Fade';
 
 const Ready: FC = () => {
 	const date = new Date();
+	const minutes = date.getMinutes();
+
 	return (
 		<Fade bottom>
 			<div className='mx-10 my-40 items-center grid bg-gray-900 p-10 rounded-3xl'>
@@ -20,7 +22,8 @@ const Ready: FC = () => {
 										<span className='discord-author-bot-tag'>Bot</span>
 									</span>
 									<span className='discord-message-timestamp'>
-										Today at {date.getHours()}:{date.getMinutes()}
+										{date.getHours()}:{minutes < 10 ? '0' : ''}
+										{minutes}
 									</span>
 								</div>
 								<div className='discord-embed'>
@@ -31,7 +34,7 @@ const Ready: FC = () => {
 												<div className='discord-embed-title'>
 													<span>Ready to protect your server?</span>
 												</div>
-												<div className='discord-embed-description'>Start using Pyrite Bot now!</div>
+												<div className='discord-embed-description'>Start using Pyrite Bot now to get this features and more!</div>
 											</div>
 										</div>
 									</div>

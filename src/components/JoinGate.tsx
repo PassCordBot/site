@@ -6,6 +6,8 @@ import Fade from 'react-reveal/Fade';
 
 const JoinGate: FC = () => {
 	const date = new Date();
+	const minutes = date.getMinutes();
+
 	return (
 		<Fade bottom>
 			<div className='mx-10 my-40 items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl'>
@@ -26,7 +28,7 @@ const JoinGate: FC = () => {
 										<span className='discord-author-bot-tag'>Bot</span>
 									</span>
 									<span className='discord-message-timestamp'>
-										Today at {date.getHours()}:{date.getMinutes()}
+										Today at {date.getHours()}:{minutes < 10 ? '0' : ''} {minutes}
 									</span>
 								</div>
 								<div className='discord-embed'>

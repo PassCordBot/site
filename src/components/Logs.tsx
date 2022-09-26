@@ -1,13 +1,14 @@
 import type { FC } from 'react';
 import '../assets/global.css';
 import arrow from '../assets/arrow.webp';
-import angelnext from '../assets/angelnext.png';
+import angelnext from '../assets/angelnext.webp';
 import premium from '../assets/premium.svg';
 import Fade from 'react-reveal/Fade';
 
 const Logs: FC = () => {
 	const date = new Date();
 	const month = date.getMonth() + 1;
+	const minutes = date.getMinutes();
 
 	return (
 		<Fade bottom>
@@ -32,7 +33,7 @@ const Logs: FC = () => {
 										<span className='discord-author-bot-tag'>Bot</span>
 									</span>
 									<span className='discord-message-timestamp'>
-										Today at {date.getHours()}:{date.getMinutes()}
+										Today at {date.getHours()}:{minutes < 10 ? '0' : ''} {minutes}
 									</span>
 								</div>
 								<div className='discord-embed'>
