@@ -1,6 +1,6 @@
 {
 	"extends": "astro/tsconfigs/strictest",
 	"compilerOptions": {
-		"allowSyntheticDefaultImports": true
+		"module": "ES2022"
 	}
 }

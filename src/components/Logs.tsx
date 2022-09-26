@@ -1,6 +1,4 @@
 import type { FC } from 'react';
-import { DiscordMessage, DiscordMessages, DiscordEmbed, DiscordMention, DiscordMarkdown } from '@discord-message-components/react';
-import '@discord-message-components/react/dist/style.css';
 import '../assets/global.css';
 import arrow from '../assets/arrow.webp';
 import angelnext from '../assets/angelnext.png';
@@ -8,6 +6,9 @@ import premium from '../assets/premium.svg';
 import Fade from 'react-reveal/Fade';
 
 const Logs: FC = () => {
+	const date = new Date();
+	const month = date.getMonth() + 1;
+
 	return (
 		<Fade bottom>
 			<div className='mx-10 my-40 items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl'>
@@ -18,29 +19,74 @@ const Logs: FC = () => {
 						your community easily!
 					</p>
 				</div>
-				<DiscordMessages>
-					<DiscordMessage bot avatar='/favicon.svg' author='Pyrite'>
-						<DiscordEmbed footerIcon={premium} timestamp={new Date()} authorIcon={angelnext} authorName='AngelNext' borderColor='#5865f2'>
-							<span slot='footer'>Pyrite Support</span>
-							<div>
-								<img className='float-left mr-1 self-start' width={16} height={16} src={arrow} alt='Arrow Icon' />{' '}
-								<DiscordMention>eldi mindcrafter</DiscordMention> has been warned by <DiscordMention>AngelNext</DiscordMention>
+				<div className='discord-messages'>
+					<div className='discord-message'>
+						<div className='discord-message-content'>
+							<div className='discord-author-avatar'>
+								<img src='/favicon.svg' alt='' />
 							</div>
-							<div>
-								<img className='float-left mr-1 self-start' width={16} height={16} src={arrow} alt='Reply Icon' /> <strong>Executor:</strong>{' '}
-								<DiscordMention>AngelNext</DiscordMention>
+							<div className='discord-message-body'>
+								<div>
+									<span className='discord-author-info'>
+										<span className='discord-author-username'>Pyrite</span>
+										<span className='discord-author-bot-tag'>Bot</span>
+									</span>
+									<span className='discord-message-timestamp'>
+										Today at {date.getHours()}:{date.getMinutes()}
+									</span>
+								</div>
+								<div className='discord-embed'>
+									<div className='discord-embed-left-border' style={{ backgroundColor: '#5865f2' }}></div>
+									<div className='discord-embed-container'>
+										<div className='discord-embed-content'>
+											<div>
+												<div className='discord-embed-author'>
+													<img className='discord-embed-author-icon' src={angelnext} alt='' />
+													<span>AngelNext</span>
+												</div>
+												<div className='discord-embed-description'>
+													<div>
+														<img className='float-left mr-1 self-start' width='16' height='16' src={arrow} alt='Arrow Icon' />{' '}
+														<span className='discord-mention'>@eldi mindcrafter</span> has been warned by{' '}
+														<span className='discord-mention'>@AngelNext</span>
+													</div>
+													<div>
+														<img className='float-left mr-1 self-start' width='16' height='16' src={arrow} alt='Arrow Icon' />{' '}
+														<strong>Executor:</strong> <span className='discord-mention'>@AngelNext</span>
+													</div>
+													<div>
+														<img className='float-left mr-1 self-start' width='16' height='16' src={arrow} alt='Arrow Icon' />{' '}
+														<strong>Reason:</strong>{' '}
+														<span className='discord-markdown'>
+															<span className='discord-markdown-content'>
+																<code>Spamming many times</code>
+															</span>
+														</span>
+													</div>
+													<div>
+														<img className='float-left mr-1 self-start' width='16' height='16' src={arrow} alt='Arrow Icon' /> <strong>Time:</strong>{' '}
+														<span className='rounded-[3px] bg-zinc-700'>2 days ago</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div className='discord-embed-footer'>
+											<img className='discord-embed-footer-icon' src={premium} alt='' />
+											<span>
+												<span slot='footer'>Pyrite Support</span>
+												<span className='discord-embed-footer-separator'>•</span>
+												<span>
+													{date.getDate()}/{month < 10 ? '0' : ''}
+													{month}/{date.getFullYear()}
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div>
-								<img className='float-left mr-1 self-start' width={16} height={16} src={arrow} alt='Reply Icon' /> <strong>Reason:</strong>{' '}
-								<DiscordMarkdown>`Spamming many times`</DiscordMarkdown>
-							</div>
-							<div>
-								<img className='float-left mr-1 self-start' width={16} height={16} src={arrow} alt='Reply Icon' /> <strong>Time:</strong>{' '}
-								<span className='rounded-[3px] bg-zinc-700'>2 days ago</span>
-							</div>
-						</DiscordEmbed>
-					</DiscordMessage>
-				</DiscordMessages>
+						</div>
+					</div>
+				</div>
 			</div>
 		</Fade>
 	);
