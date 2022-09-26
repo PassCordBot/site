@@ -22,7 +22,7 @@ const Ready: FC = () => {
 										<span className='discord-author-bot-tag'>Bot</span>
 									</span>
 									<span className='discord-message-timestamp'>
-										{date.getHours()}:{minutes < 10 ? '0' : ''}
+										Today at {date.getHours()}:{minutes < 10 ? '0' : ''}
 										{minutes}
 									</span>
 								</div>
