@@ -1,13 +1,11 @@
 import type { FC } from 'react';
-import pkg from '@discord-message-components/react';
+import { DiscordMessage, DiscordMessages, DiscordEmbed } from '@discord-message-components/react';
 import '@discord-message-components/react/dist/style.css';
 import '../assets/global.css';
 import premium from '../assets/premium.svg';
 import arrow from '../assets/arrow.webp';
 import reply from '../assets/reply.webp';
 import Fade from 'react-reveal/Fade';
-
-const { DiscordMessages, DiscordMessage, DiscordEmbed } = pkg;
 
 const Lockdown: FC = () => {
 	return (
