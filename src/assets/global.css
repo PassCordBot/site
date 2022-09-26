@@ -1,0 +1,14 @@
+.discord-embed-title::before {
+	content: url('/check.webp');
+	position: relative;
+	top: 3px;
+	margin-right: 3px;
+}
+
+.discord-messages {
+	border-radius: 15px;
+}
+
+.discord-markdown .discord-markdown-content > code {
+	background-color: #1f1f21;
+}
