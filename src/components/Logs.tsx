@@ -24,7 +24,7 @@ const Logs: FC = () => {
 					<div className='discord-message'>
 						<div className='discord-message-content'>
 							<div className='discord-author-avatar'>
-								<img src='/favicon.svg' alt='' />
+								<img src='/favicon.png' alt='' />
 							</div>
 							<div className='discord-message-body'>
 								<div>

@@ -1,20 +1,20 @@
 ---
-import Logo from './Logo.astro';
+import logo from '../assets/pyrite.webp';
 ---
 
-<div class='grid place-items-center'>
+<div class='md:grid hidden place-items-center'>
 	<nav class='md:ml-14 flex border-white/10 border justify-center items-center m-5 rounded-3xl backdrop-blur-lg w-[90%] md:w-[50%] fixed top-0 z-10'>
 		<div class='flex'>
 			<div class='p-2 mt-1 md:mt-2 mr-4 flex items-center'>
 				<a href='/'>
-					<Logo />
+					<img class='rounded-full border-4 border-indigo-700' src={logo} width={60} height={60} />
 				</a>
 			</div>
 			<div class='flex items-center justify-center space-x-4'>
 				<a
 					href='https://discord.gg/NxJzWWqhdQ'
 					target='_blank'
-					class='flex gap-2 text-white hover:bg-indigo-500 duration-50 px-3 py-2 rounded-md text-sm font-medium'
+					class='flex gap-2 text-white hover:bg-indigo-500 duration-50 px-3 py-2 rounded-md md:text-sm text-xs font-medium'
 					>Support Server <svg preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24' width='1.2em' height='1.2em' class='h-5 w-5'>
 						<path
 							fill='none'

@@ -3,6 +3,7 @@ import '../assets/global.css';
 import reply from '../assets/reply.webp';
 import captcha from '../assets/captcha.webp';
 import angelnext from '../assets/angelnext.webp';
+import check from '../assets/check.webp';
 import Fade from 'react-reveal/Fade';
 
 const Verification: FC = () => {
@@ -11,7 +12,7 @@ const Verification: FC = () => {
 
 	return (
 		<Fade bottom>
-			<div className='mx-10 mt-[26rem] mb-40 items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl'>
+			<div className='mx-10 mt-[26rem] mb-40 justify-center items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl'>
 				<div className='block md:hidden my-9 font-unisans'>
 					<h3 className='text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-indigo-900'>Verification</h3>
 					<p className='text-gray-500 text-lg'>
@@ -23,7 +24,7 @@ const Verification: FC = () => {
 					<div className='discord-message'>
 						<div className='discord-message-content'>
 							<div className='discord-author-avatar'>
-								<img src='/favicon.svg' alt='Favicon' />
+								<img src='/favicon.png' alt='Favicon' />
 							</div>
 							<div className='discord-message-body'>
 								<div>
@@ -36,12 +37,12 @@ const Verification: FC = () => {
 									</span>
 								</div>
 								<div className='discord-embed'>
-									<div className='discord-embed-left-border' style={{ backgroundColor: '#5865f2' }}></div>
+									<div className='discord-embed-left-border' style={{ backgroundColor: '#57F287' }}></div>
 									<div className='discord-embed-container'>
 										<div className='discord-embed-content'>
 											<div>
 												<div className='discord-embed-title'>
-													<img className='relative top-[2px] float-left mr-1 self-start' width='16' height='16' src='/check.webp' alt='Check Icon' />
+													<img className='relative top-[2px] float-left mr-1 self-start' width='16' height='16' src={check} alt='Check Icon' />
 													<span>Verification</span>
 												</div>
 												<div className='discord-embed-description'>
@@ -78,7 +79,7 @@ const Verification: FC = () => {
 					<div className='discord-message'>
 						<div className='discord-message-content'>
 							<div className='discord-author-avatar'>
-								<img src='/favicon.svg' alt='' />
+								<img src='/favicon.png' alt='' />
 							</div>
 							<div className='discord-message-body'>
 								<div>
@@ -91,13 +92,13 @@ const Verification: FC = () => {
 									</span>
 								</div>
 								<div className='discord-embed'>
-									<div className='discord-embed-left-border' style={{ backgroundColor: '#5865f2' }}></div>
+									<div className='discord-embed-left-border' style={{ backgroundColor: '#57F287' }}></div>
 									<div className='discord-embed-container'>
 										<div className='discord-embed-content'>
 											<div>
 												<div className='discord-embed-description'>
-													<img className='float-left mr-1 self-start' width='16' height='16' src='/check.webp' alt='Check Icon' /> Successfully
-													verified you!
+													<img className='float-left mr-1 self-start' width='16' height='16' src={check} alt='Check Icon' /> You have been verified
+													successfully, you can now continue to the server!
 												</div>
 											</div>
 										</div>
