@@ -72,7 +72,7 @@ const Verification: FC = () => {
 										Today at {date.getHours()}:{minutes < 10 ? '0' : ''} {minutes}
 									</span>
 								</div>
-								EBFCDD
+								DAACBC
 							</div>
 						</div>
 					</div>
