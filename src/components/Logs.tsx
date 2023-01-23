@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import '../assets/global.css';
 import arrow from '../assets/arrow.webp';
 import angelnext from '../assets/angelnext.webp';
-import premium from '../assets/premium.svg';
+import pyrite from '../assets/pyrite.webp';
 import Fade from 'react-reveal/Fade';
 
 const Logs: FC = () => {
@@ -37,7 +37,7 @@ const Logs: FC = () => {
 									</span>
 								</div>
 								<div className='discord-embed'>
-									<div className='discord-embed-left-border' style={{ backgroundColor: '#5865f2' }}></div>
+									<div className='discord-embed-left-border' style={{ backgroundColor: '#2f3136' }}></div>
 									<div className='discord-embed-container'>
 										<div className='discord-embed-content'>
 											<div>
@@ -72,7 +72,7 @@ const Logs: FC = () => {
 											</div>
 										</div>
 										<div className='discord-embed-footer'>
-											<img className='discord-embed-footer-icon' src={premium} alt='' />
+											<img className='discord-embed-footer-icon' src={pyrite} alt='' />
 											<span>
 												<span slot='footer'>Pyrite Support</span>
 												<span className='discord-embed-footer-separator'>•</span>

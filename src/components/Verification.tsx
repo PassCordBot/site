@@ -37,7 +37,7 @@ const Verification: FC = () => {
 									</span>
 								</div>
 								<div className='discord-embed'>
-									<div className='discord-embed-left-border' style={{ backgroundColor: '#57F287' }}></div>
+									<div className='discord-embed-left-border' style={{ backgroundColor: '#2f3136' }}></div>
 									<div className='discord-embed-container'>
 										<div className='discord-embed-content'>
 											<div>
