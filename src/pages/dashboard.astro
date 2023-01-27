@@ -1,19 +1,16 @@
 ---
+import Layout from '../layout/Layout.astro';
+import Text from '../components/Text';
 import Verification from '../components/Verification';
 import Logs from '../components/Logs';
 import Lockdown from '../components/Lockdown';
-import JoinGate from '../components/JoinGate';
 import Passport from '../components/Passport';
+import JoinGate from '../components/JoinGate';
 import Ready from '../components/Ready';
-import Layout from '../layout/Layout.astro';
-import Text from '../components/Text';
 ---
 
 <Layout title='Dashboard'>
-	<Text client:load>
-		<span>Know your members.</span>
-		<span>Know your community.</span>
-	</Text>
+	<Text client:load>Dashboard</Text>
 	<div class='mt-20'>
 		<Verification client:load />
 		<Logs client:visible />
@@ -22,7 +19,4 @@ import Text from '../components/Text';
 		<Passport client:visible />
 		<Ready client:visible />
 	</div>
-	<footer class='text-center font-thin font-unisans mb-10 text-sm text-gray-400'>
-		<p>© 2023 Pyrite. All rights reserved.</p>
-	</footer>
 </Layout>
