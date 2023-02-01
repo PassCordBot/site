@@ -1,4 +1,3 @@
-import type { FC } from 'react';
 import '../assets/global.css';
 import reply from '../assets/reply.webp';
 import captcha from '../assets/captcha.webp';
@@ -6,7 +5,7 @@ import angelnext from '../assets/angelnext.webp';
 import check from '../assets/check.webp';
 import Fade from 'react-reveal/Fade';
 
-const Verification: FC = () => {
+const Verification = () => {
 	const date = new Date();
 	const minutes = date.getMinutes();
 

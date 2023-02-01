@@ -1,22 +1,18 @@
 ---
 import Layout from '../layout/Layout.astro';
 import Text from '../components/Text';
-import Verification from '../components/Verification';
-import Logs from '../components/Logs';
-import Lockdown from '../components/Lockdown';
-import Passport from '../components/Passport';
-import JoinGate from '../components/JoinGate';
-import Ready from '../components/Ready';
+import DashboardSection from '../components/DashboardSection.astro';
 ---
 
 <Layout title='Dashboard'>
 	<Text client:load>Dashboard</Text>
-	<div class='mt-20'>
-		<Verification client:load />
-		<Logs client:visible />
-		<Lockdown client:visible />
-		<JoinGate client:visible />
-		<Passport client:visible />
-		<Ready client:visible />
+	<div class='mt-52 grid mb-20 gap-24 place-items-stretch'>
+		<DashboardSection title='Verification'>Activate our advanced amazing verification system.</DashboardSection>
+		<DashboardSection title='Logs'>Activate our advanced and detailed logs.</DashboardSection>
+		<DashboardSection title='Anti-Raid'>Activate our advanced and secure anti raid system.</DashboardSection>
+		<DashboardSection title='Lockdown'>Activate our secure and fast lockdown procedure.</DashboardSection>
+		<DashboardSection title='Anti-Spam'>Activate our efficient and customizable anti-spam system.</DashboardSection>
+		<DashboardSection title='Toxicity Filter'>Activate our efficient and customizable anti-spam system.</DashboardSection>
+		<DashboardSection title='Anti Links'>Activate our simple yet useful anti-link system.</DashboardSection>
 	</div>
 </Layout>
