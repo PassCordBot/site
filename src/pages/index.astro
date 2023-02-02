@@ -1,11 +1,11 @@
 ---
-import Verification from '../components/Verification';
-import Logs from '../components/Logs';
-import Lockdown from '../components/Lockdown';
-import Passport from '../components/Passport';
-import Ready from '../components/Ready';
 import Layout from '../layout/Layout.astro';
-import Text from '../components/Text';
+import Verification from '../components/Verification.svelte';
+import Logs from '../components/Logs.svelte';
+import Lockdown from '../components/Lockdown.svelte';
+import Passport from '../components/Passport.svelte';
+import Ready from '../components/Ready.svelte';
+import Text from '../components/Text.svelte';
 ---
 
 <Layout title='Dashboard'>
@@ -15,12 +15,9 @@ import Text from '../components/Text';
 	</Text>
 	<div class='mt-20'>
 		<Verification client:load />
-		<Logs client:visible />
-		<Lockdown client:visible />
-		<Passport client:visible />
-		<Ready client:visible />
+		<Logs client:load />
+		<Lockdown client:load />
+		<Passport client:load />
+		<Ready client:load />
 	</div>
-	<footer class='text-center font-thin font-unisans mb-10 text-sm text-gray-400'>
-		<p>© 2023 Pyrite. All rights reserved.</p>
-	</footer>
 </Layout>

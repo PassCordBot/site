@@ -1,5 +1,5 @@
 ---
-import Switch from './Switch';
+import Switch from 'svelte-switch';
 
 export interface Props {
 	title: string;
@@ -8,12 +8,15 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<div class='p-24 mx-56 grid grid-cols-2 justify-center items-center text-white bg-gray-900 rounded-2xl border-4'>
-	<div class='grid gap-2'>
+<div class='p-24 mx-56 grid grid-cols-2 place-items-center text-white bg-gray-900 rounded-2xl border-4'>
+	<div class='justify-self-start grid gap-2'>
 		<h4 class='font-unisans text-2xl'>{title}</h4>
 		<p><slot /></p>
 	</div>
 	<div class='justify-self-end'>
-		<Switch client:load />
+		<Switch client:load onColor='#06D6A0' checked={false}>
+			<span slot='checkedIcon'></span>
+			<span slot='unCheckedIcon'></span>
+		</Switch>
 	</div>
 </div>
