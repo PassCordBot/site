@@ -38,7 +38,7 @@
 						</span>
 					</div>
 					<div class="discord-embed">
-						<div class="discord-embed-left-border" style="{{ backgroundColor: '#2f3136' }}"></div>
+						<div class="discord-embed-left-border" style="background-color: #2f3136;"></div>
 						<div class="discord-embed-container">
 							<div class="discord-embed-content">
 								<div>
