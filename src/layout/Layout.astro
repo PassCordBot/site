@@ -1,6 +1,5 @@
 ---
 import Nav from '../components/Nav.astro';
-import background from '../assets/background.svg';
 import pyrite from '../assets/pyrite.svg';
 import Footer from '../components/Footer.svelte';
 
@@ -24,15 +23,15 @@ const { title } = Astro.props;
 		<meta property='og:image' content={pyrite} />
 		<link rel='icon' type='image/svg+xml' href={pyrite} />
 	</head>
-	<body class='bg-[#001220]'>
+	<body class='bg-gray-900'>
 		<Nav />
 		<slot />
 		<Footer />
 
-		<style define:vars={{ background: `url(${background})` }}>
+		<style define:vars={{ background: `url()` }}>
 			@font-face {
-				src: url('/fonts/unisans.woff2') format('woff2'), url('/fonts/unisans.woff') format('woff');
-				font-family: 'Uni Sans';
+				src: url('/fonts/agrandir.woff2') format('woff2'), url('/fonts/agrandir.woff') format('woff');
+				font-family: 'Agrandir';
 				font-display: swap;
 			}
 

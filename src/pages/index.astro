@@ -10,8 +10,8 @@ import Text from '../components/Text.svelte';
 
 <Layout title='Dashboard'>
 	<Text client:load>
-		<span>Know your members.</span>
-		<span>Know your community.</span>
+		<span>Know your <span class='under'>members.</span></span>
+		<span>Know your <span class='under'>community.</span></span>
 	</Text>
 	<div class='mt-20'>
 		<Verification client:load />
@@ -21,3 +21,22 @@ import Text from '../components/Text.svelte';
 		<Ready client:load />
 	</div>
 </Layout>
+
+<style>
+	.under {
+		display: inline-block;
+		color: #ffebb3;
+		position: relative;
+	}
+	.under::after {
+		content: '';
+		position: absolute;
+		background-image: url('https://www.mozilla.org/media/protocol/img/zaps/zap-08.fc201d70f76b.svg');
+		background-repeat: repeat-x;
+		background-size: contain;
+		width: 100%;
+		height: 10px;
+		left: 0;
+		bottom: -4px;
+	}
+</style>

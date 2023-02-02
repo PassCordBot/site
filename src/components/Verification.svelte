@@ -14,10 +14,10 @@
 
 <div
 	use:reveal="{{ y: 100, transition: 'fly' }}"
-	class="mx-10 mt-[26rem] mb-40 justify-center items-center flex flex-col md:inline-grid grid-cols-2 border border-slate-700 bg-gray-900 p-10 rounded-3xl"
+	class="mx-10 mt-[26rem] mb-40 justify-center items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl"
 >
-	<div class="block md:hidden my-9 font-unisans">
-		<h3 class="text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Verification</h3>
+	<div class="block md:hidden my-9">
+		<h3 class="font-agrandir text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Verification</h3>
 		<p class="text-gray-500 text-lg">
 			This will keep your server safe, from bots and more. Its our super useful captcha verification. Easy to setup and secure, start protecting your
 			server now.
@@ -110,8 +110,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="hidden md:block ml-9 mt-9 font-unisans">
-		<h1 class="text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Verification</h1>
+	<div class="hidden md:block ml-9 mt-9 font-agrandir">
+		<h1 class="text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-900">Verification</h1>
 		<p class="text-gray-500 text-lg">
 			This will keep your server safe, from bots and more. Its our super useful captcha verification. Easy to setup and secure, start protecting your
 			server now.

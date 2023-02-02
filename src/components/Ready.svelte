@@ -9,7 +9,7 @@
 	const time = `Today at ${date.getHours()}:${minutes < 10 ? '0' : ''}${minutes}`;
 </script>
 
-<div use:reveal="{{ y: 100, transition: 'fly' }}" class="mx-10 my-40 items-center grid border border-slate-700 bg-gray-900 p-3 rounded-[1.3em]">
+<div use:reveal="{{ y: 100, transition: 'fly' }}" class="mx-10 my-40 items-center grid bg-gray-900 p-3 rounded-[1.3em]">
 	<div class="discord-messages">
 		<div class="discord-message">
 			<div class="discord-message-content">
