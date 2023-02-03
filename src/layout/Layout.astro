@@ -1,7 +1,7 @@
 ---
 import Nav from '../components/Nav.astro';
-import favicon from '../assets/pyrite.svg';
-import pyrite from '../assets/pyrite.webp';
+import pyrite from '../assets/pyrite.svg';
+import banner from '../assets/banner.webp';
 import Footer from '../components/Footer.svelte';
 
 export interface Props {
@@ -21,8 +21,8 @@ const { title } = Astro.props;
 		<meta property='og:site_name' content='Pyrite' />
 		<meta property='og:title' content={`Pyrite - ${title}`} />
 		<meta property='og:description' content='Know your members. Know your community.' />
-		<meta property='og:image' content={pyrite} />
-		<link rel='icon' type='image/svg+xml' href={favicon} />
+		<meta property='og:image' content={banner} />
+		<link rel='icon' type='image/svg+xml' href={pyrite} />
 	</head>
 	<body class='bg-gray-900'>
 		<Nav />
