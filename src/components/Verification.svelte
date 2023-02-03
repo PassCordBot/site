@@ -27,7 +27,7 @@
 		<div class="discord-message">
 			<div class="discord-message-content">
 				<div class="discord-author-avatar">
-					<img src="{pyrite}" alt="Favicon" />
+					<img src="{pyrite}" alt="pyrite avatar" />
 				</div>
 				<div class="discord-message-body">
 					<div>
@@ -52,7 +52,7 @@
 										<img class="float-left mr-1 self-start" width="16" height="16" src="{reply}" alt="Reply Icon" /> Are you a human? Lets find out. Simply
 										type the following captcha below so I can verify that you are human. The captcha will only last 10 seconds so be quick!
 									</div>
-									<img class="discord-embed-image" src="{captcha}" alt="" />
+									<img class="discord-embed-image" width="{450}" height="{150}" src="{captcha}" alt="pyrite captcha" />
 								</div>
 							</div>
 						</div>
@@ -63,7 +63,7 @@
 		<div class="discord-message">
 			<div class="discord-message-content">
 				<div class="discord-author-avatar">
-					<img src="{angelnext}" alt="" />
+					<img src="{angelnext}" alt="pyrite user example icon" />
 				</div>
 				<div class="discord-message-body">
 					<div>
@@ -81,7 +81,7 @@
 		<div class="discord-message">
 			<div class="discord-message-content">
 				<div class="discord-author-avatar">
-					<img src="{pyrite}" alt="" />
+					<img src="{pyrite}" alt="pyrite avatar" />
 				</div>
 				<div class="discord-message-body">
 					<div>

@@ -25,7 +25,7 @@
 		<div class="discord-message">
 			<div class="discord-message-content">
 				<div class="discord-author-avatar">
-					<img src="{pyrite}" alt="" />
+					<img src="{pyrite}" alt="pyrite avatar" />
 				</div>
 				<div class="discord-message-body">
 					<div>
@@ -43,7 +43,7 @@
 							<div class="discord-embed-content">
 								<div>
 									<div class="discord-embed-author">
-										<img class="discord-embed-author-icon" src="{pyrite}" alt="" />
+										<img class="discord-embed-author-icon" src="{pyrite}" alt="pyrite support icon" />
 										<span>Pyrite Support</span>
 									</div>
 									<div class="flex flex-col gap-2 discord-embed-description">

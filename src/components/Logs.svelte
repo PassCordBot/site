@@ -26,7 +26,7 @@
 		<div class="discord-message">
 			<div class="discord-message-content">
 				<div class="discord-author-avatar">
-					<img src="{pyrite}" alt="" />
+					<img src="{pyrite}" alt="pyrite avatar" />
 				</div>
 				<div class="discord-message-body">
 					<div>
@@ -44,7 +44,7 @@
 							<div class="discord-embed-content">
 								<div>
 									<div class="discord-embed-author">
-										<img class="discord-embed-author-icon" src="{angelnext}" alt="" />
+										<img class="discord-embed-author-icon" src="{angelnext}" alt="pyrite user example icon" />
 										<span>AngelNext</span>
 									</div>
 									<div class="discord-embed-description">
@@ -74,7 +74,7 @@
 								</div>
 							</div>
 							<div class="discord-embed-footer">
-								<img class="discord-embed-footer-icon" src="{pyrite}" alt="" />
+								<img class="discord-embed-footer-icon" src="{pyrite}" alt="pyrite avatar footer" />
 								<span>
 									<span>Pyrite Support</span>
 									<span class="discord-embed-footer-separator">•</span>

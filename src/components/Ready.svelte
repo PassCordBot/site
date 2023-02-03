@@ -14,7 +14,7 @@
 		<div class="discord-message">
 			<div class="discord-message-content">
 				<div class="discord-author-avatar">
-					<img src="{pyrite}" alt="" />
+					<img src="{pyrite}" alt="pyrite avatar" />
 				</div>
 				<div class="discord-message-body">
 					<div>

@@ -22,7 +22,7 @@
 	<div class="discord-messages">
 		<div class="discord-message">
 			<div class="discord-interaction">
-				<img class="discord-interaction-author-avatar" src="{angelnext}" alt="" />
+				<img class="discord-interaction-author-avatar" src="{angelnext}" alt="pyrite user example icon" />
 				<span class="discord-author-info discord-interaction-author-info">
 					<span class="discord-author-username">AngelNext</span>
 				</span>
@@ -33,7 +33,7 @@
 			</div>
 			<div class="discord-message-content">
 				<div class="discord-author-avatar">
-					<img src="{pyrite}" alt="" />
+					<img src="{pyrite}" alt="pyrite avatar" />
 				</div>
 				<div class="discord-message-body">
 					<div>
@@ -45,7 +45,7 @@
 							{time}
 						</span>
 					</div>
-					<img width="{431}" height="{375}" src="{card}" alt="card" />
+					<img width="{431}" height="{375}" src="{card}" alt="passport card" />
 				</div>
 			</div>
 		</div>
