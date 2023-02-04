@@ -16,7 +16,7 @@
 	class="mx-10 my-40 items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl"
 >
 	<div class="my-9 font-agrandir">
-		<h1 class="text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Passport</h1>
+		<h1 class="uppercase text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Passport</h1>
 		<p class="text-gray-500 text-lg">Every user has a card that helps you determine the danger they can bring to your server.</p>
 	</div>
 	<div class="discord-messages">

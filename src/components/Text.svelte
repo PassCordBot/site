@@ -1,5 +1,5 @@
 <h1
-	class="grid place-items-center mt-56 ml-14 font-agrandir gap-8 text-6xl font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700"
+	class="grid uppercase place-items-center mt-12 font-agrandir gap-8 text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-900"
 >
 	<slot />
 </h1>

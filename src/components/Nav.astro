@@ -1,61 +1,23 @@
 ---
 import pyrite from '../assets/pyrite.svg';
+import Link from './Link.astro';
 ---
 
-<div class='md:grid hidden place-items-center'>
-	<nav class='grid rounded-b-[2.5em] p-3 backdrop-blur-md bg-gray-900 w-full'>
-		<div class='grid grid-cols-2'>
-			<div class='p-3 ml-10 grid'>
-				<a href='/'>
-					<img src={pyrite} alt="pyrite icon" width={60} height={60} />
-				</a>
-			</div>
-			<div class='font-agrandir flex items-center justify-self-center justify-center gap-4'>
-				<a
-					href='https://discord.gg/NxJzWWqhdQ'
-					target='_blank'
-					class='flex gap-2 text-white hover:bg-[#5865f2] duration-50 px-3 py-2 rounded-full md:text-sm text-xs font-medium'
-					>Support Server <svg preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24' width='1.2em' height='1.2em' class='h-5 w-5'>
-						<path
-							fill='none'
-							stroke='currentColor'
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							stroke-width='2'
-							d='M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14'></path>
-					</svg>
-				</a>
-
-				<a
-					href='https://top.gg/bot/1008400801628164096'
-					target='_blank'
-					class='flex gap-2 text-white hover:bg-[#5865f2] duration-50 px-3 py-2 rounded-full md:text-sm text-xs font-medium'
-					>Vote <svg preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24' width='1.2em' height='1.2em' class='h-5 w-5'>
-						<path
-							fill='none'
-							stroke='currentColor'
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							stroke-width='2'
-							d='M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14'></path>
-					</svg>
-				</a>
-
-				<a
-					href='https://discord.com/oauth2/authorize?client_id=1008400801628164096&permissions=8&scope=bot%20applications.commands'
-					target='_blank'
-					class='flex gap-2 text-white bg-[#5865f2] duration-50 px-3 py-2 rounded-full text-sm font-medium'
-					>Invite Me <svg preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24' width='1.2em' height='1.2em' class='h-5 w-5'>
-						<path
-							fill='none'
-							stroke='currentColor'
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							stroke-width='2'
-							d='M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14'></path>
-					</svg>
-				</a>
-			</div>
-		</div>
-	</nav>
-</div>
+<nav class='flex items-center justify-between p-10'>
+	<a href='/'>
+		<img src={pyrite} alt='pyrite icon' width={60} height={60} />
+	</a>
+	<ul class='flex gap-3'>
+		<li>
+			<Link to='https://discord.gg/NxJzWWqhdQ'>Support Server</Link>
+		</li>
+		<li>
+			<Link to='https://top.gg/bot/1008400801628164096'>Vote</Link>
+		</li>
+		<li>
+			<Link to='https://discord.com/oauth2/authorize?client_id=1008400801628164096&permissions=8&scope=bot%20applications.commands' bg>
+				Invite Me
+			</Link>
+		</li>
+	</ul>
+</nav>

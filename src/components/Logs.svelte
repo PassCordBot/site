@@ -16,7 +16,7 @@
 	class="mx-10 my-40 items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl"
 >
 	<div class="mr-9 my-9 font-agrandir">
-		<h1 class="text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Logs</h1>
+		<h1 class="uppercase text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Logs</h1>
 		<p class="text-gray-500 text-lg">
 			Know what your members/moderators/admins are doing in your server, from deleting messages to trying to raid, logs will help you manage your
 			community easily!

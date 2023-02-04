@@ -14,9 +14,13 @@
 		"@astrojs/svelte": "^2.0.1",
 		"@astrojs/tailwind": "^3.0.1",
 		"astro": "^2.0.4",
+		"canvas-confetti": "^1.6.0",
 		"svelte": "^3.54.0",
 		"svelte-reveal": "^0.7.0",
 		"svelte-switch": "^0.0.5",
 		"tailwindcss": "^3.2.4"
+	},
+	"devDependencies": {
+		"@types/canvas-confetti": "^1.6.0"
 	}
 }
