@@ -13,7 +13,7 @@
 
 <div use:reveal="{{ y: 100, transition: 'fly' }}" class="grid lg:grid-cols-2 place-items-center gap-10">
 	<div class="grid gap-5 font-agrandir">
-		<h1 class="gradient text-2xl lg:text-5xl">Logs</h1>
+		<h2 class="gradient text-2xl lg:text-5xl">Logs</h2>
 		<p class="text-gray-500 text-sm md:text-lg">
 			Know what your members/moderators/admins are doing in your server, from deleting messages to trying to raid, logs will help you manage your
 			community easily!

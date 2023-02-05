@@ -15,7 +15,7 @@
 
 <div use:reveal="{{ y: 100, transition: 'fly' }}" class="grid lg:grid-cols-2 place-items-center gap-10">
 	<div class="grid lg:hidden gap-5 font-agrandir">
-		<h3 class="gradient text-2xl">Verification</h3>
+		<h2 class="gradient text-2xl">Verification</h2>
 		<p class="text-gray-500 text-sm">
 			This will keep your server safe, from bots and more. Its our super useful captcha verification. Easy to setup and secure, start protecting your
 			server now.
@@ -109,7 +109,7 @@
 		</div>
 	</div>
 	<div class="hidden lg:grid gap-5 font-agrandir">
-		<h1 class="gradient text-5xl">Verification</h1>
+		<h2 class="gradient text-5xl">Verification</h2>
 		<p class="text-gray-500 text-lg">
 			This will keep your server safe, from bots and more. Its our super useful captcha verification. Easy to setup and secure, start protecting your
 			server now.

@@ -13,7 +13,7 @@
 
 <div use:reveal="{{ y: 100, transition: 'fly' }}" class="grid lg:grid-cols-2 place-items-center gap-10">
 	<div class="grid gap-5 font-agrandir">
-		<h1 class="gradient text-2xl lg:text-5xl">Passport</h1>
+		<h2 class="gradient text-2xl lg:text-5xl">Passport</h2>
 		<p class="text-gray-500 text-sm md:text-lg">Every user has a card that helps you determine the danger they can bring to your server.</p>
 	</div>
 	<div class="discord-messages">

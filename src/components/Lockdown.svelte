@@ -13,7 +13,7 @@
 
 <div use:reveal="{{ y: 100, transition: 'fly' }}" class="grid lg:grid-cols-2 place-items-center gap-10">
 	<div class="grid lg:hidden gap-5 font-agrandir">
-		<h1 class="gradient text-2xl text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Lockdown</h1>
+		<h2 class="gradient text-2xl text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Lockdown</h2>
 		<p class="text-gray-500 text-sm">
 			Has your server been raided, do you want to revamp it? Lockdown helps you lock your server and give updates to your members!
 		</p>
@@ -62,7 +62,7 @@
 		</div>
 	</div>
 	<div class="hidden lg:grid gap-5 font-agrandir">
-		<h1 class="gradient text-5xl">Lockdown</h1>
+		<h2 class="gradient text-5xl">Lockdown</h2>
 		<p class="text-gray-500 text-lg">
 			Has your server been raided, do you want to revamp it? Lockdown helps you lock your server and give updates to your members!
 		</p>
