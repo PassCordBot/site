@@ -5,13 +5,13 @@ import Link from './Link.astro';
 
 <nav class='flex items-center justify-between p-10'>
 	<a href='/'>
-		<img src={pyrite} alt='pyrite icon' width={60} height={60} />
+		<img src={pyrite} alt='pyrite icon' class='w-10 h-10 md:w-16 md:h-16' />
 	</a>
-	<ul class='flex gap-3'>
-		<li>
+	<ul class='flex gap-2 md:gap-3'>
+		<li class='hidden md:block'>
 			<Link to='https://discord.gg/NxJzWWqhdQ'>Support Server</Link>
 		</li>
-		<li>
+		<li class='hidden md:block'>
 			<Link to='https://top.gg/bot/1008400801628164096'>Vote</Link>
 		</li>
 		<li>

@@ -10,15 +10,13 @@
 
 	const date = new Date();
 	const minutes = date.getMinutes();
+	const time = `Today at ${date.getHours()}:${minutes < 10 ? '0' : ''}${minutes}`;
 </script>
 
-<div
-	use:reveal="{{ y: 100, transition: 'fly' }}"
-	class="mx-10 mt-[26rem] mb-40 justify-center items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl"
->
-	<div class="block md:hidden my-9 font-agrandir">
-		<h3 class="uppercase text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Verification</h3>
-		<p class="text-gray-500 text-lg">
+<div use:reveal="{{ y: 100, transition: 'fly' }}" class="grid lg:grid-cols-2 place-items-center gap-10">
+	<div class="grid lg:hidden gap-5 font-agrandir">
+		<h3 class="gradient text-2xl">Verification</h3>
+		<p class="text-gray-500 text-sm">
 			This will keep your server safe, from bots and more. Its our super useful captcha verification. Easy to setup and secure, start protecting your
 			server now.
 		</p>
@@ -36,7 +34,7 @@
 							<span class="discord-author-bot-tag">Bot</span>
 						</span>
 						<span class="discord-message-timestamp">
-							Today at {date.getHours()}:{minutes < 10 ? '0' : ''}{minutes}
+							{time}
 						</span>
 					</div>
 					<div class="discord-embed">
@@ -71,7 +69,7 @@
 							<span class="discord-author-username">AngelNext</span>
 						</span>
 						<span class="discord-message-timestamp">
-							Today at {date.getHours()}:{minutes < 10 ? '0' : ''}{minutes}
+							{time}
 						</span>
 					</div>
 					DAACBC
@@ -90,7 +88,7 @@
 							<span class="discord-author-bot-tag">Bot</span>
 						</span>
 						<span class="discord-message-timestamp">
-							Today at {date.getHours()}:{minutes < 10 ? '0' : ''}{minutes}
+							{time}
 						</span>
 					</div>
 					<div class="discord-embed">
@@ -110,8 +108,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="hidden md:block ml-9 mt-9 font-agrandir">
-		<h1 class="uppercase text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-900">Verification</h1>
+	<div class="hidden lg:grid gap-5 font-agrandir">
+		<h1 class="gradient text-5xl">Verification</h1>
 		<p class="text-gray-500 text-lg">
 			This will keep your server safe, from bots and more. Its our super useful captcha verification. Easy to setup and secure, start protecting your
 			server now.

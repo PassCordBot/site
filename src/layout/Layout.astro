@@ -47,6 +47,10 @@ const { title } = Astro.props;
 		</script>
 
 		<style>
+			:global(.gradient) {
+				@apply uppercase font-agrandir text-transparent bg-clip-text bg-gradient-to-r from-[#38b6ff] to-[#5865f2];
+			}
+
 			html {
 				scroll-behavior: smooth;
 			}

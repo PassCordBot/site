@@ -547,13 +547,15 @@
 }
 
 .discord-messages {
-	color: #fff;
-	background-color: #36393e;
+	border: double 8px transparent;
+	background-image: linear-gradient(#36393e, #36393e), linear-gradient(to right, #38b6ff, #5865f2);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
 	font-size: 16px;
+	width: 100%;
 	font-family: 'Whitney', sans-serif;
 	line-height: 170%;
 	border-radius: 15px;
-	border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .discord-reactions .discord-reaction {

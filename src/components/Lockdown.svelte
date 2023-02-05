@@ -11,13 +11,10 @@
 	const time = `Today at ${date.getHours()}:${minutes < 10 ? '0' : ''}${minutes}`;
 </script>
 
-<div
-	use:reveal="{{ y: 100, transition: 'fly' }}"
-	class="mx-10 my-40 items-center flex flex-col md:inline-grid grid-cols-2 bg-gray-900 p-10 rounded-3xl"
->
-	<div class="block md:hidden my-9 font-agrandir">
-		<h1 class="uppercase text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Lockdown</h1>
-		<p class="text-gray-500 text-lg">
+<div use:reveal="{{ y: 100, transition: 'fly' }}" class="grid lg:grid-cols-2 place-items-center gap-10">
+	<div class="grid lg:hidden gap-5 font-agrandir">
+		<h1 class="gradient text-2xl text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Lockdown</h1>
+		<p class="text-gray-500 text-sm">
 			Has your server been raided, do you want to revamp it? Lockdown helps you lock your server and give updates to your members!
 		</p>
 	</div>
@@ -64,8 +61,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="hidden md:block ml-9 mt-9 font-agrandir">
-		<h1 class="uppercase text-5xl mb-5 font-[1000] text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-700">Lockdown</h1>
+	<div class="hidden lg:grid gap-5 font-agrandir">
+		<h1 class="gradient text-5xl">Lockdown</h1>
 		<p class="text-gray-500 text-lg">
 			Has your server been raided, do you want to revamp it? Lockdown helps you lock your server and give updates to your members!
 		</p>
