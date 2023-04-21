@@ -1,0 +1,127 @@
+---
+import Layout from '../layout/Layout.astro';
+import Verification from '../components/Verification.svelte';
+import Logs from '../components/Logs.svelte';
+import Lockdown from '../components/Lockdown.svelte';
+import Passport from '../components/Passport.svelte';
+import Ready from '../components/Ready.svelte';
+import Text from '../components/Text.svelte';
+---
+
+<Layout title='Home'>
+	<div class='grid mt-16 md:mt-28 gap-48'>
+		<div class='md:flex gap-24 px-10 md:px-24 py-5 mx-10 rounded-xl bg-gray-800'>
+			<div class="grid">
+				<div class="mb-8">
+					<Text client:load>
+						<span>
+							Know your <br> <span id="slogan" class='gradient'></span>
+							<span class='cursor'>|</span>.
+						</span>
+					</Text>
+				</div>
+	
+					<div class="gap-16 grid">
+						<div class='flex'>
+							<p class='text-sm md:text-base leading-7 md:leading-9 text-slate-300'>
+								Pyrite is a security discord bot, that helps you mantain a safe environment in your server, with it's verification, lockdown, danger features,
+								and many more features to have a safe <span class='gradient'>community</span>, and protect your <span class='gradient'>members</span>.
+							</p>
+						</div>
+						<div class='hidden md:block'>
+							<button aria-label='Go Down' id='down'>
+								<svg xmlns='http://www.w3.org/2000/svg' fill='#F9A8D4' class='w-12 h-12 md:w-20 md:h-20' viewBox='0 0 24 24'>
+									<path d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z'></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+			</div>
+			<div class="flex mt-16 flex-col gap-16 justify-center text-white text-xl tracking-wide underline font-light font-agrandir uppercase">
+				<a target="_blank" class="transition-all hover:tracking-[0.1em]" href="https://discord.gg/dMQAggh23J">Support Server →</a>
+				<a target="_blank" class="transition-all hover:tracking-[0.1em]" href="https://top.gg/bot/1008400801628164096">Vote! →</a>
+				<a target="_blank" class="transition-all hover:tracking-[0.1em]" href="https://discord.com/api/oauth2/authorize?client_id=1008400801628164096&redirect_uri=http%3A%2F%2Flocalhost%2Fdiscord%2Fcallback&response_type=code&scope=identify%20guilds%20applications.commands%20applications.commands.permissions.update">Invite! →</a>
+			</div>
+		</div>
+		<ul class='grid gap-96 mx-10 md:mx-20'>
+			<li>
+				<Verification client:load />
+			</li>
+			<li>
+				<Logs client:load />
+			</li>
+			<li>
+				<Lockdown client:load />
+			</li>
+			<li>
+				<Passport client:load />
+			</li>
+			<li>
+				<Ready client:load />
+			</li>
+		</ul>
+	</div>
+</Layout>
+
+<script>
+	const SPEED = 200;
+
+		let i = 0;
+		let txt = 'members';
+
+		function removeWriter(t: string) {
+			if (i !== document.querySelector('#slogan')!.innerHTML.length) {
+				document.querySelector('#slogan')!.innerHTML = document.querySelector('#slogan')!
+					.innerHTML
+					.slice(0, document.querySelector('#slogan')!.innerHTML.length - 1);
+				
+				setTimeout(() => removeWriter(t), SPEED - 150);
+			} else {
+				txt = t;
+				setTimeout(typeWriter, SPEED);
+			}
+		}
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.querySelector('#slogan')!.innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, SPEED);
+			} else if (txt === 'members') {
+				i = 0;
+				removeWriter('community');
+			} else if (txt === 'community') {
+				i = 0;
+				removeWriter('members');
+			}
+		}
+
+		typeWriter();
+</script>
+
+<script>
+	const button = document.querySelector<HTMLButtonElement>('#down');
+
+	button?.addEventListener('click', () => {
+		window.scrollTo(0, 700);
+	});
+</script>
+
+<style>
+	.cursor {
+		animation: blink 1s linear infinite;
+		color: #fff;
+	}
+
+	@keyframes blink {
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 0.5;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+</style>
